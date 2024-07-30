@@ -6,11 +6,10 @@ carriers = {
     'sprint':   '@page.nextel.com'
 }
 #703-832-6846
-"dd5095a2ee88296b348584cdc368ff3a-0f1db83d-e4fadb2e"
 def send(message):
         # Replace the number with your own, or consider using an argument\dict for multiple people.
     to_number = '7036290239{}'.format(carriers['verizon'])
-    auth = ('testmctestface08@gmail.com', 'airvubcvquirylvq')
+    auth = ('testmctestface08@gmail.com', '')
 
     # Establish a secure session with gmail's outgoing SMTP server using your gmail account
     server = smtplib.SMTP( "smtp.gmail.com", 587 )
