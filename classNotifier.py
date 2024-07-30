@@ -7,6 +7,7 @@ import schedule
 import time
 import classRefresher
 import threading
+import textme
 
 filename = "vt_api\\dataObjects.json"
 def submit():
@@ -102,6 +103,7 @@ def job():
                 listbox.insert(tk.END, item["subj_code"] + "-" + item["crse_number"] + "CLOSED")
         else:
             listbox.insert(tk.END, df.loc[0, "course"] + ": OPEN")
+            textme.send("YOUR CLASS IS OPEN")
         
 def run_scheduler():
     while True:
